@@ -53,3 +53,30 @@ for number in a:
     elif number > second_largest:
         second_largest = number
 print("Second largest:", second_largest)
+
+
+
+#countingpositiveandnegative
+
+a = [10, -5, 7, -2, 0, 15, -8]
+
+positive = 0
+negative = 0
+for number in a:
+    if number > 0:
+        positive = positive + 1
+    elif number < 0:
+        negative = negative + 1
+print("Positive:", positive)
+print("Negative:", negative)
+
+
+
+
+#duplicatecount
+
+a = [5, 5, 8, 10, 8, 8]
+for number in set(a):
+    if a.count(number)>1:
+        print(number)
+        
