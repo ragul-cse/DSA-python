@@ -38,3 +38,18 @@ reversed_a = []
 for i in range(len(a) - 1, -1, -1):
     reversed_a.append(a[i])
 print(reversed_a)
+
+
+#secondlargest
+
+a = [10, 25, 7, 42, 18, 31]
+
+largest = a[0]
+second_largest = a[0]
+for number in a:
+    if number > largest:
+        second_largest = largest
+        largest = number
+    elif number > second_largest:
+        second_largest = number
+print("Second largest:", second_largest)
