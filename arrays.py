@@ -30,3 +30,11 @@ if found:
     print("element found")
 else:
     print("element not found")
+
+
+#reversearray
+a = [10, 20, 30, 40, 50]
+reversed_a = []
+for i in range(len(a) - 1, -1, -1):
+    reversed_a.append(a[i])
+print(reversed_a)
