@@ -14,3 +14,19 @@ for number in numbers:
         largest = number
 
 print("Largest number:", largest)
+
+
+
+#linearsearch
+
+a = [4, 9, 15, 22, 31]
+target = 22
+found = false
+for number in a:
+    if number==target:
+        found=true
+        break
+if found:
+    print("element found")
+else:
+    print("element not found")
